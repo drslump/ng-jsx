@@ -1,0 +1,15 @@
+{
+  "name": "ng-jsx",
+  "version": "0.0.1",
+  "description": "Angular oriented jsx procressor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esprima-fb": "^8001.1001.0-dev-harmony-fb",
+    "recast": "^0.9.11"
+  }
+}
