@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var ngJsx = require('../lib');
+
+var args = process.argv.slice(2);
+
+if (args.length !== 1) {
+  process.stderr.write('Usage: ng-jsx <source.jsx>\n');
+  process.exit(1);
+}
+
+var source = fs.readFileSync(args[0]).toString();
+var result = ngJsx.compile(source);
+process.stdout.write(result.code);

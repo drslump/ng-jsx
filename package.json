@@ -1,15 +1,32 @@
 {
   "name": "ng-jsx",
   "version": "0.0.1",
-  "description": "Angular oriented jsx procressor",
-  "main": "index.js",
+  "description": "Angular oriented JSX procressor",
+  "main": "lib/index.js",
+  "bin": {
+    "ng-jsx": "./bin/ng-jsx"
+  },
+  "files": [
+    "lib/index.js",
+    "bin/ng-jsx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:drslump/ng-jsx.git"
+  },
+  "dependencies": {
+    "recast": "^0.9.11",
+    "through": "~2.3.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "esprima-fb": "^8001.1001.0-dev-harmony-fb",
-    "recast": "^0.9.11"
-  }
+  "keywords": [
+    "ast",
+    "jsx",
+    "angular",
+    "react"
+  ],
+  "author": "Iván -DrSlump- Montes",
+  "license": "MIT"
 }
